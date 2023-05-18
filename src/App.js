@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import { ActionButton } from '@patternfly/react-component-groups';
+import { ErrorState } from '@patternfly/react-component-groups';
+
+// require('react-dom');
+// window.React2 = require('react');
+// console.log('window.React1', window.React1);
+// console.log('window.React2', window.React2);
+// console.log('window.React1 === window.React2', window.React1 === window.React2);
+
+const Test = () => (
+  // <ActionButton
+  //   children='Primary action'
+  //   // eslint-disable-next-line no-console
+  //   onClick={() => {console.log('Primary action clicked')}}
+  // />
+  <ErrorState errorTitle="test" />
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Test />
+      <div>test</div>
+    </>
   );
 }
 
